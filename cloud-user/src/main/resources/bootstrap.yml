@@ -1,0 +1,9 @@
+
+spring:
+  cloud:
+    zookeeper:
+      connect-string: 192.168.229.20:2181
+  application:
+    name: cloud-user
+server:
+  port: 2000

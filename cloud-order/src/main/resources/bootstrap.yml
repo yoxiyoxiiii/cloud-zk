@@ -1,0 +1,23 @@
+
+spring:
+  cloud:
+    zookeeper:
+      connect-string: 192.168.229.20:2181
+  application:
+    name: cloud-order
+
+server:
+  port: 9000
+
+#启用hystrix
+feign:
+  hystrix:
+    enabled: true
+#熔断超时配置
+hystrix:
+  command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 5000
