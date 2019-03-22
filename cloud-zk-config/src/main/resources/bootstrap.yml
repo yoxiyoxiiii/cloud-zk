@@ -1,0 +1,13 @@
+
+spring:
+  cloud:
+    zookeeper:
+      connect-string: 192.168.229.20:2181
+      config:
+        enabled: true
+        root: configuration # 自己创建的，不会自动创建  配置根路径
+        profileSeparator: '-' #  配置profile分隔符
+  application:
+    name: cloud-config
+server:
+  port: 8090

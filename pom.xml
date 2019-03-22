@@ -13,10 +13,18 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cloud-zk</name>
 	<description>Demo project for Spring Boot</description>
-
+    <packaging>
+		pom
+	</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+
+	<modules>
+		<module>cloud-order</module>
+		<module>cloud-user</module>
+		<module>cloud-zk-config</module>
+	</modules>
 
 	<dependencies>
 
