@@ -17,7 +17,7 @@ public class CloudZkConfigApplication {
 	}
 
 
-	@Value("${dev}")
+	@Value("${spring.datasource.url}")
 	private String dev;
 
 	@GetMapping("dev")

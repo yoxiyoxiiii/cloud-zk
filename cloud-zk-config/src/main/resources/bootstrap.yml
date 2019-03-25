@@ -1,4 +1,10 @@
 
+# /configuration/cloud-config-dev/spring.datasource.url
+# /root/application:name[分割符-] profile
+# 每个属性都是一个节点，最后一个节点 里面存放的是 值 如 spring.datasource.url 里面就是数据库连接信息
+# boostrap.yml 的加载顺序优先 application.yml
+# boostrap.yml 配置 zk 信息
+# application.yml  配置允许的环境 dev ，然后就会取/configuration/cloud-config-dev/ 节点下面的属性信息
 spring:
   cloud:
     zookeeper:
