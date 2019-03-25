@@ -5,6 +5,9 @@
 # boostrap.yml 的加载顺序优先 application.yml
 # boostrap.yml 配置 zk 信息
 # application.yml  配置允许的环境 dev ，然后就会取/configuration/cloud-config-dev/ 节点下面的属性信息
+# 可用zkui 导入配置信息 格式：/root/{application-name}-{profile}={key}={value}
+# /configuration/cloud-config-dev=spring.datasource.url=jdbc:mysql://192.168.0.176:3306/world?characterEncoding=utf8&useSSL=false
+# 文件txt
 spring:
   cloud:
     zookeeper:
