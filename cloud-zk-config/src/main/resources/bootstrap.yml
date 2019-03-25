@@ -8,6 +8,7 @@
 # 可用zkui 导入配置信息 格式：/root/{application-name}-{profile}={key}={value}
 # /configuration/cloud-config-dev=spring.datasource.url=jdbc:mysql://192.168.0.176:3306/world?characterEncoding=utf8&useSSL=false
 # 文件txt
+# 如果手动使用zkCli 客户端创建的化 就要以此创建每个节点
 spring:
   cloud:
     zookeeper:
